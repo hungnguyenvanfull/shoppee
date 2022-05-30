@@ -1,0 +1,87 @@
+@keyframes Fadein{
+    from {
+        opacity: 0;
+       
+    }
+    to{
+        opacity: 1;
+        
+    }
+
+}
+@keyframes growth{
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to{
+        transform: scale(1);
+        opacity: 1;
+        
+    }
+}
+/* responsive */
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.grid_full-width{
+    width: 100%;
+}
+.grid__row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.grid__column-2 {
+    width: 16.66667%;
+    padding-left: 12px;
+    padding-right: 12px;
+    
+}
+.grid__column-10{
+    width: 83.33333%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.grid_column-2-4{
+    width: 20%; 
+    padding-left: 12px;
+    padding-right: 12px;
+}
+/* modal */
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    animation: growth linear 0.05s;
+
+}
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.modal__body{
+    margin: auto;
+   
+    background-color: var(--white-color) ;
+    z-index: 1;
+    border-radius: 5px;
+    min-width: 400px;
+    width: 400px;
+}
+.btn.btn--disabled{
+    opacity: 1 !important;
+    cursor: default;
+    color: #949494;
+    background-color: #c3c3c3;
+}
+
